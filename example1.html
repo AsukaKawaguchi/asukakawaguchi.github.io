@@ -51,9 +51,7 @@
     box-sizing: border-box;
     border-radius: .5em;
 
-    background: #191919 url("https://coolbet-cms.imgix.net/landingpage/bg_1589547165248.jpg") center top no-repeat;
-    -webkit-background-size: 100%;
-    background-size: 100%;
+
   }
 
   :root {
@@ -149,6 +147,7 @@
 
 
   }
+
 
   /* #buttons */
 
@@ -792,15 +791,44 @@
   }
 
 
+  #video-area{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  #video{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 177.77777778vh;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+
+
+
   
 </style>
 
 <div id="marketing">
+<div id = "video-area">
+        <video id="video" webkit-playsinline playsinline muted autoplay loop>
+        <source src="bg.webm" type="video/webm"></video>
+</div>
+
   <div class="marketing-content blue">
     <div class="div-flex ">
       <div class="div-media">
-        <img src="https://coolbet-cms.imgix.net/landingpage/CB-Chips_1589547165249.png" alt="">
-
+        <!--
+        <video autoplay muted loop src="main3.mov" type="video/mov"></video>></video>-->
       </div>
       <div class=" div-heading">
 
